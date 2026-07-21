@@ -1,7 +1,7 @@
-"use server";
+"use client";
 
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { createConversation, updateConversation, deleteConversation, listConversations } from "../actions/conversation-action";
 import { queryKeys } from "../utils/query-keys";
